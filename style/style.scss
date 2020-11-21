@@ -1,0 +1,115 @@
+$DarkCyan: #19a2ae;
+$VeryDarkDesaturatedBlue: #2d3248;
+$DarkGrayishBlue: #6a6f81;
+$NameAndStatsFontSize: 18px;
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: $NameAndStatsFontSize;
+}
+
+body {
+  background-color: $DarkCyan;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -300px -520px, 690px 330px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.profileContainer {
+  background-color: #ffffff;
+  width: 320px;
+  border-radius: 15px;
+  height: 365px;
+  box-shadow: 5px 5px 10px #00000017;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  h1,
+  h2 {
+    font-family: "Kumbh Sans", sans-serif;
+    text-align: center;
+  }
+  h1 {
+    color: $VeryDarkDesaturatedBlue;
+    font-weight: 700;
+  }
+  h2,
+  b {
+    color: $DarkGrayishBlue;
+    font-weight: 400;
+  }
+  div:nth-child(1) {
+    height: 37%;
+    background-image: url(../images/bg-pattern-card.svg);
+    overflow: visible;
+    img {
+      position: relative;
+      top: 50px;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+    }
+  }
+  div:nth-child(2) {
+    flex-direction: column;
+    height: 37%;
+    h1 {
+      margin-top: 50px;
+    }
+    h2 {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    b {
+      margin-left: 3px;
+    }
+  }
+  div:nth-child(3) {
+    border-top: 1px solid #e9e9e9;
+    height: 26%;
+    span {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: auto;
+    }
+    h2 {
+      font-size: 10px;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-position: -500px -400px, 150px 320px;
+    background-size: 700px 700px, 600px 600px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-position: -350px -500px, 400px 320px;
+    background-size: 800px 800px, 700px 700px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-position: -500px -400px, 150px 320px;
+    background-size: 700px 700px, 600px 600px;
+  }
+}
