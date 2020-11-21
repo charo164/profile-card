@@ -28,16 +28,16 @@ body {
   height: 365px;
   box-shadow: 5px 5px 10px #00000017;
 }
-.profileContainer h1,
-.profileContainer h2 {
+.profileContainer h2,
+.profileContainer h3 {
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
 }
-.profileContainer h1 {
+.profileContainer h2 {
   color: #2d3248;
   font-weight: 700;
 }
-.profileContainer h2,
+.profileContainer h3,
 .profileContainer b {
   color: #6a6f81;
   font-weight: 400;
@@ -63,10 +63,10 @@ body {
   justify-content: center;
   height: 37%;
 }
-.profileContainer div:nth-child(2) h1 {
+.profileContainer div:nth-child(2) h2 {
   margin-top: 50px;
 }
-.profileContainer div:nth-child(2) h2 {
+.profileContainer div:nth-child(2) h3 {
   margin-top: 10px;
   font-size: 13px;
 }
@@ -84,7 +84,7 @@ body {
   justify-content: center;
   flex: auto;
 }
-.profileContainer div:nth-child(3) h2 {
+.profileContainer div:nth-child(3) h3 {
   font-size: 10px;
   margin-top: 5px;
   letter-spacing: 1px;
