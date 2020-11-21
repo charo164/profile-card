@@ -78,7 +78,7 @@ body {
   border-top: 1px solid #e9e9e9;
   height: 26%;
 }
-.profileContainer div:nth-child(3) span {
+.profileContainer div:nth-child(3) section {
   display: flex;
   flex-direction: column;
   justify-content: center;
